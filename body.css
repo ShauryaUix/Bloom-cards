@@ -2,26 +2,25 @@
 
 body {
   height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
+  /* width: 100 */
+  margin: 0 !important;
+  padding: 0 !important;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
 .nav-bar {
-  height: 10%;
+  height: 10vh;
   background-color: #ffcc08;
 }
 
 .main-area {
-  margin-left: 50px; 
-  margin-right: 50px;
+  margin-left: 96px;
+  margin-right: 96px;
   display: flex;
-  flex-wrap: wrap; 
   gap: 25px;
-  padding-top: 50px;
-  /* justify-content: center;  */
+
+  height:100%;
 }
 
 .main-body {
@@ -29,43 +28,74 @@ body {
   background-color: rgba(196, 190, 190, 0.2);
 }
 
+.data-details {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 30px;
+}
+
+
 .card {
-  margin-top: 30px;
-  height: 400px;
-  max-width: 400px;
-  border: 2px solid rgba(128, 128, 128, 0.318);
+  border: 1px solid rgba(128, 128, 128, 0.318);
   border-radius: 15px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+margin: auto;
+  height:100%;
+  max-height: 450px;
 }
+
+.changeImageInDiv {
+  display: flex;
+  align-items: end;
+  align-self: end;
+
+  margin-top: auto;
+
+  width:190px; 
+   height:190px;
+}
+
 
 .changeTitle {
   color: #ffcc08;
-  margin: 30px;
+  font-weight: 800;
+  font-size: 25px;
+  text-wrap: wrap;
+
+  margin: 30px 0 8px;
 }
 
 .changeDesc {
   color: rgb(153, 153, 153);
   font-size: 20px;
   font-weight: normal;
-  margin: 0 30px;
+  margin: 0 0 15px;
+  text-wrap: wrap;
 }
 
 .changeLinkTitle {
   font-size: 16px;
   font-weight: bold;
-  margin: 30px;
+  margin: 0;
   text-decoration: underline;
-  text-decoration-color: rgba(128, 128, 128, 0.412);
+  text-decoration-color: rgba(128, 128, 128, 0.2);
   text-decoration-thickness: 2px;
   text-underline-position: under;
   color: rgb(153, 153, 153);
 }
 
+.changeLinkTitle:hover {
+  color: #ffcc08;
+  text-decoration-color: #ffcc08;
+  cursor: pointer;
+}
+
 .changeImage {
-  height: 190px;
-  width: 185px;
-  position: relative;
-  left:100px;
+  height: 100%;
+  width:100%;
 }
 
 .footer-bar {
@@ -73,22 +103,101 @@ body {
   background-color: #ffcc08;
 }
 
-@media screen and (max-width:1370px){
+@media screen and (max-width:1080px ) and (min-width:1025px){
+  .changeImage {
+    height: 150px;
+    width:100%;
+  }
+}
+@media screen and (max-width:1024px){
+  .main-area {
+  margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    height:100%;
+  }
+  
+  .main-body {
+    height: 80%;
+    background-color: rgba(196, 190, 190, 0.2);
+  }
+  
+  .data-details {
+    display: flex;
+    flex-direction: column;
+  
+    padding: 0 0 0 30px;
+  }
+  
+  
+  .changeDesc {
+    color: rgb(153, 153, 153);
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 15px;
+    text-wrap: nowrap;
+  }
   .card {
-    margin-top: 30px;
-    height: 400px;
-    max-width: 200px;
-    border: 2px solid rgba(128, 128, 128, 0.318);
+    border: 1px solid rgba(128, 128, 128, 0.318);
     border-radius: 15px;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+  margin: auto;
+    height: auto;
+  }
+  
+  .changeImageInDiv {
+    display: flex;
+    align-self: end;
+    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+    /* justify-content: end;
+    align-items: end;
+    align-self: end; */
+  
+    margin-top: auto;
+  
+    width: auto;
+        height: auto;
+  }
+  
+  .changeDesc {
+    color: rgb(153, 153, 153);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 5px;
+    text-wrap: wrap;
+  }
+  .changeTitle {
+    color: #ffcc08;
+    font-weight: 700;
+    font-size: 23px;
+    text-wrap: wrap;
+  
+    margin: 20px 0 8px;
+  }
+  
+  .changeImage {
+   height: 150px;
+  }
+  .changeLinkTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 26px 0;
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 128, 128, 0.2);
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+    color: rgb(153, 153, 153);
+  }
+  
+  .changeLinkTitle:hover {
+    color: #ffcc08;
+    text-decoration-color: #ffcc08;
+    cursor: pointer;
   }
 
-  .changeImage {
-    height: 100px;
-    width: 145px;
-    position: relative;
-    left:100px;
-  }
-  
-  
 }
