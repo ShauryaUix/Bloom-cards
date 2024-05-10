@@ -1,0 +1,25 @@
+Position
+Flex
+Grid
+Text - Font, Color, weight, lineHeight, text-overflow, white-space, box sizing
+keyframes
+transition
+Block elements
+transform
+z-index
+
+
+class
+id
+pseudo selector
+:after :before :hover :active :focussed
+variables
+
+units - px, rem, vh, vw, em
+
+padding 
+margin
+
+data attribute
+
+
