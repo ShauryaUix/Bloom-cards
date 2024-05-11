@@ -1,0 +1,143 @@
+@media screen and (max-width:1080px ) and (min-width:1025px){
+  .changeImage {
+    height: 150px;
+    width:100%;
+  }
+}
+@media screen and (max-width:1024px){
+  .card-wrapper {
+
+  margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+    height:100%;
+    
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .main-body {
+
+    height: 80%;
+    background-color: rgba(196, 190, 190, 0.2);
+
+  }
+  
+  .details {
+
+    display: flex;
+    flex-direction: column;
+  
+    padding: 0 0 0 30px;
+  }
+  
+  
+  .Desc {
+
+    color: rgb(153, 153, 153);
+
+    font-size: 20px;
+    font-weight: normal;
+    text-wrap: nowrap;
+
+    margin: 0 0 15px;
+
+  }
+  .card {
+
+    border: 1px solid rgba(128, 128, 128, 0.318);
+    border-radius: 15px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+
+    margin:20px;
+
+  }
+  
+  .ImageInDiv {
+
+    display: flex;
+    align-self: end;
+    justify-content: flex-end;
+     
+  
+    margin-top: 20px;
+    margin-left:auto;
+  
+       width: auto;
+        height: auto;
+  }
+  
+  .Desc {
+
+    color: rgb(153, 153, 153);
+
+    font-size: 18px;
+    font-weight: 400;
+    text-wrap: wrap;
+
+    margin: 0 0 5px;
+
+  }
+  .Title {
+
+    color: #ffcc08;
+
+    font-weight: 700;
+    font-size: 23px;
+    text-wrap: wrap;
+  
+    margin: 20px 0 8px;
+
+  }
+  
+  .Image {
+
+   height: 150px;
+
+  }
+  .LinkTitle {
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin: 26px 0;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 128, 128, 0.2);
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+
+    color: rgb(153, 153, 153);
+
+  }
+  
+  .LinkTitle:hover {
+
+    color: #ffcc08;
+    text-decoration-color: #ffcc08;
+    
+    cursor: pointer;
+
+  }
+
+  .nav-bar {
+
+    height: 0%;
+    background-color: #ffcc08;
+  
+  }
+
+  .footer-bar {
+  
+    height: 0%;
+    background-color: #ffcc08;
+  
+  }
+  
+}
